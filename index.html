@@ -30,21 +30,27 @@
             /*** WHITE OPACITY ***/
             /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%,rgba(255, 255, 255, 0.7) 100%), url(https://images.pexels.com/photos/34676/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);*/
         }
+
         .navbar-nav .nav-item a {
             display: block;
             color: #13294b;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 25px;
             font-weight: 600;
+        }
+
+        .navbar-nav>li {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     </style>
 </head>
 
 <body>
-    
+
 
     <header>
-        
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand  col-lg-3" href="#">
@@ -56,17 +62,17 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link" href="#">School ERP</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                SERVICES
+                                Services
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">School ERP</a></li>
@@ -82,70 +88,90 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Web Hosting</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">SMS Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Web Development</a>
+                            <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-success me-2" type="button">Apply for Demo</button>
-                    <button class="btn btn-outline-success" type="button">Contact Us</button>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="">
+    <section id="banner">
         <div class="container-fluid p-5 text-white home-bg" style="background-color: #f4aea4;">
             <div class="row align-items-center g-lg-5 py-2">
                 <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
-                    <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls.
-                        Each
-                        required form group has a validation state that can be triggered by attempting to submit the
-                        form
-                        without completing it.</p>
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade"  data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h1 class="display-3 fw-bold lh-1 mb-3">Turning Point</h1>
+                                <h2 class="display-6 fw-bold lh-1 mb-3">Software & Web Designing</h2>
+                                <p class="col-lg-10 fs-4">Turning Point, has been serving the
+                                    Education Industry for the last 15 years at more than 600 Institutions across the
+                                    country We serve Schools and Colleges who computerize their clerical tasks
+                                    using our Software and Websites customized to their requirements These
+                                    Schools and Colleges are all of different types, and belong to different
+                                    Educational Boards and Universities. <a href="" class="text-muted">read more</a></p>
+                            </div>
+                            <div class="carousel-item active">
+                                <h1 class="display-3 fw-bold lh-1 mb-3">Turning Point</h1>
+                                <h2 class="display-6 fw-bold lh-1 mb-3">Software & Web Designing</h2>
+                                <p class="col-lg-10 fs-4">Turning Point, has been serving the
+                                    Education Industry for the last 15 years at more than 600 Institutions across the
+                                    country We serve Schools and Colleges who computerize their clerical tasks
+                                    using our Software and Websites customized to their requirements These
+                                    Schools and Colleges are all of different types, and belong to different
+                                    Educational Boards and Universities. <a href="" class="text-muted">read more</a></p>
+                            </div>
+                            <div class="carousel-item active">
+                                <h1 class="display-3 fw-bold lh-1 mb-3">Turning Point</h1>
+                                <h2 class="display-6 fw-bold lh-1 mb-3">Software & Web Designing</h2>
+                                <p class="col-lg-10 fs-4">Turning Point, has been serving the
+                                    Education Industry for the last 15 years at more than 600 Institutions across the
+                                    country We serve Schools and Colleges who computerize their clerical tasks
+                                    using our Software and Websites customized to their requirements These
+                                    Schools and Colleges are all of different types, and belong to different
+                                    Educational Boards and Universities. <a href="" class="text-muted">read more</a></p>
+                            </div>                            
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-10 mx-auto col-lg-5">
                     <div class="card">
                         <div class="card-body text-dark">
-                            <h3 class="text-dark mb-3 ms-3 fw-bold">Get Edunext ERP for your school</h3>
+                            <h3 class="text-dark mb-3 ms-3 fw-bold">Eduware - School/College ERP software</h3>
+                            <hr>
                             <form class="row g-3 p-3">
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="inputEmail4">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter Name">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Mobile</label>
-                                    <input type="text" class="form-control" id="inputEmail4">
+                                    <label for="mobile" class="form-label">Mobile</label>
+                                    <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">School/College/Organization</label>
-                                    <input type="text" class="form-control" id="inputPassword4">
+                                    <label for="institute" class="form-label">School/College/Organization</label>
+                                    <input type="text" class="form-control" id="institute"
+                                        placeholder="Enter School/College/Organization">
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="inputState" class="form-label">City</label>
-                                    <select id="inputState" class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
+                                <div class="col-md-12">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter City">
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                                        <label class="form-check-label" for="gridCheck">
-                                            Check me out
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                    <button type="submit" class="btn btn-outline-danger">Submit for enquiry</button>
                                 </div>
                             </form>
                         </div>
@@ -156,6 +182,382 @@
     </section>
 
 
+
+    <section class="py-0 py-xl-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div
+                        class="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
+                        <span class="display-6 lh-1 text-warning mb-0"><i class="fas fa-tv"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0"
+                                    data-purecounter-end="10" data-purecounter-delay="200"
+                                    data-purecounter-duration="0">10</h5>
+                                <span class="mb-0 h5">K</span>
+                            </div>
+                            <p class="mb-0">Online Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-4 bg-blue bg-opacity-10 rounded-3">
+                        <span class="display-6 lh-1 text-blue mb-0"><i class="fas fa-user-tie"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0"
+                                    data-purecounter-end="200" data-purecounter-delay="200"
+                                    data-purecounter-duration="0">200</h5>
+                                <span class="mb-0 h5">+</span>
+                            </div>
+                            <p class="mb-0">Expert Tutors</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-4 bg-purple bg-opacity-10 rounded-3">
+                        <span class="display-6 lh-1 text-purple mb-0"><i class="fas fa-user-graduate"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0"
+                                    data-purecounter-end="60" data-purecounter-delay="200"
+                                    data-purecounter-duration="0">60</h5>
+                                <span class="mb-0 h5">K+</span>
+                            </div>
+                            <p class="mb-0">Online Students</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-4 bg-info bg-opacity-10 rounded-3">
+                        <span class="display-6 lh-1 text-info mb-0"><i class="bi bi-patch-check-fill"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6"
+                                    data-purecounter-delay="300" data-purecounter-duration="0">6</h5>
+                                <span class="mb-0 h5">K+</span>
+                            </div>
+                            <p class="mb-0">Certified Courses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-5">
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div
+                        class="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
+                        <span class="display-6 lh-1 text-warning mb-0"><i class="fas fa-tv"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0"
+                                    data-purecounter-end="10" data-purecounter-delay="200"
+                                    data-purecounter-duration="0">10</h5>
+                                <span class="mb-0 h5">K</span>
+                            </div>
+                            <p class="mb-0">Online Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-4 bg-blue bg-opacity-10 rounded-3">
+                        <span class="display-6 lh-1 text-blue mb-0"><i class="fas fa-user-tie"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0"
+                                    data-purecounter-end="200" data-purecounter-delay="200"
+                                    data-purecounter-duration="0">200</h5>
+                                <span class="mb-0 h5">+</span>
+                            </div>
+                            <p class="mb-0">Expert Tutors</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-4 bg-purple bg-opacity-10 rounded-3">
+                        <span class="display-6 lh-1 text-purple mb-0"><i class="fas fa-user-graduate"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0"
+                                    data-purecounter-end="60" data-purecounter-delay="200"
+                                    data-purecounter-duration="0">60</h5>
+                                <span class="mb-0 h5">K+</span>
+                            </div>
+                            <p class="mb-0">Online Students</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Counter item -->
+                <div class="col-sm-6 col-xl-3">
+                    <div class="d-flex justify-content-center align-items-center p-4 bg-info bg-opacity-10 rounded-3">
+                        <span class="display-6 lh-1 text-info mb-0"><i class="bi bi-patch-check-fill"></i></span>
+                        <div class="ms-4 h6 fw-normal mb-0">
+                            <div class="d-flex">
+                                <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="6"
+                                    data-purecounter-delay="300" data-purecounter-duration="0">6</h5>
+                                <span class="mb-0 h5">K+</span>
+                            </div>
+                            <p class="mb-0">Certified Courses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bg-light rounded-3 p-4">
+                        <!-- Slider START -->
+                        <div class="tiny-slider arrow-round arrow-creative arrow-blur arrow-hover py-1">
+                            <div class="tns-outer" id="tns1-ow">
+                                <div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">
+                                    slide <span class="current">22 to 26</span> of 6</div>
+                                <div id="tns1-mw" class="tns-ovh">
+                                    <div class="tns-inner" id="tns1-iw">
+                                        <div class="tiny-slider-inner  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal"
+                                            data-autoplay="true" data-gutter="80" data-arrow="true" data-dots="false"
+                                            data-items="5" data-items-lg="3" data-items-md="2" data-items-xs="1"
+                                            id="tns1" style="transform: translate3d(-80.7692%, 0px, 0px);">
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/21.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Technology</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/24.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Health</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/25.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Business</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/26.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Engineer</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/22.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Chemistry</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/23.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Physics</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/21.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Technology</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/24.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Health</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/25.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Business</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/26.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Engineer</span></a>
+                                                </div>
+                                            </div>
+
+                                            <!-- Item -->
+                                            <div class="tns-item" id="tns1-item0" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/22.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Chemistry</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- Item -->
+                                            <div class="tns-item" id="tns1-item1" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/23.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Physics</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- Item -->
+                                            <div class="tns-item" id="tns1-item2" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/21.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Technology</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- Item -->
+                                            <div class="tns-item" id="tns1-item3" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/24.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Health</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- Item -->
+                                            <div class="tns-item" id="tns1-item4" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/25.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Business</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- Item -->
+                                            <div class="tns-item" id="tns1-item5" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/26.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Engineer</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/22.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Chemistry</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/23.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Physics</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/21.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Technology</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/24.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Health</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/25.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Business</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned tns-slide-active">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/26.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Engineer</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned tns-slide-active">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/22.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Chemistry</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned tns-slide-active">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/23.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Physics</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned tns-slide-active">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/21.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Technology</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="tns-item tns-slide-cloned tns-slide-active">
+                                                <div
+                                                    class="bg-body text-center rounded-2 border py-2 px-1 position-relative">
+                                                    <img src="assets/images/element/24.svg" class="h-40px" alt="">
+                                                    <a href="#" class="text-primary-hover stretched-link"><span
+                                                            class="h6 ms-2">Health</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tns-controls" aria-label="Carousel Navigation" tabindex="0"><button
+                                        type="button" data-controls="prev" tabindex="-1" aria-controls="tns1"><i
+                                            class="fas fa-chevron-left"></i></button><button type="button"
+                                        data-controls="next" tabindex="-1" aria-controls="tns1"><i
+                                            class="fas fa-chevron-right"></i></button></div>
+                            </div>
+                        </div>
+                        <!-- Slider END -->
+                    </div>
+                </div>
+            </div> <!-- Row END -->
+        </div>
+    </section>
     <section class="position-relative overflow-hidden pt-5 pt-lg-3" hidden>
         <!-- SVG START -->
         <figure class="position-absolute top-50 start-0 translate-middle-y ms-n7 d-none d-xxl-block">
@@ -599,250 +1001,12 @@
             </div>
         </div>
     </section>
-    <section class="pb-0 pb-xl-5">
+    <section class="pb-0 pb-xl-5 p-5">
         <div class="container">
             <div class="row g-4 justify-content-between align-items-center">
                 <!-- Left side START -->
                 <div class="col-lg-5 position-relative">
-                    <!-- Svg Decoration -->
-                    <figure class="position-absolute top-0 start-0 translate-middle z-index-1 ms-4">
-                        <svg class="fill-warning" width="77px" height="77px">
-                            <path
-                                d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z">
-                            </path>
-                        </svg>
-                    </figure>
 
-                    <!-- Svg decoration -->
-                    <figure class="position-absolute bottom-0 end-0 d-none d-md-block mb-n5 me-n4">
-                        <svg height="400" class="fill-primary opacity-2" viewBox="0 0 340 340">
-                            <circle cx="194.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="2.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="26.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="50.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="74.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="98.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="122.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="146.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="170.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="194.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="218.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="242.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="266.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="290.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="314.2" r="2.2"></circle>
-                            <circle cx="194.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="2.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="218.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="26.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="242.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="50.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="266.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="74.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="290.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="98.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="314.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="122.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="338.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="146.2" cy="338.2" r="2.2"></circle>
-                            <circle cx="170.2" cy="338.2" r="2.2"></circle>
-                        </svg>
-                    </figure>
 
                     <!-- Image -->
                     <img src="assets/images/about/01.jpg" class="rounded-3 position-relative" alt="">
