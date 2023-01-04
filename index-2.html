@@ -26,7 +26,7 @@
   * THE SECOND ONE (COMMENTED) WILL BE FOR A WHITE OPACITY
   *
   */
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(bg.webp);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(bg-2.jpg);
 
             /*** WHITE OPACITY ***/
             /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%,rgba(255, 255, 255, 0.7) 100%), url(https://images.pexels.com/photos/34676/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);*/
@@ -43,6 +43,23 @@
         .navbar-nav>li {
             padding-left: 20px;
             padding-right: 20px;
+        }
+
+        .form-control {
+            border: 1px solid #ce0e12;
+            color: #ce0e12;
+        }
+        .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #dc5659;
+            opacity: 1; /* Firefox */
+        }
+
+        .form-control:focus {
+            color: #ce0e12;
+            background-color: #fff;
+            border-color: #ce0e12;
+            outline: 0;
+            box-shadow: 0 0 0 .25rem rgba(206, 14, 18, .25);
         }
     </style>
 </head>
@@ -133,7 +150,7 @@
                 </div>
                 <div class="col-md-10 mx-auto col-lg-5">
                     <div class="card bg-white">
-                        <div class="card-body text-dark shadow">
+                        <div class="card-body text-danger shadow">
                             <h3 class=" mb-3 ms-3 fw-bold">Eduware&#174; - School/College ERP Software</h3>
                             <hr>
                             <form class="row g-3 p-3">
