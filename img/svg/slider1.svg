@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="847.364" viewBox="0 0 1440 847.364">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1261b0"/>
+      <stop offset="0.485" stop-color="#0d4d8d"/>
+      <stop offset="1" stop-color="#05284e"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_22843" data-name="Group 22843" transform="translate(-254.222 -160.111)">
+    <path id="Path_37117" data-name="Path 37117" d="M1136,160.111s39.111,145.778,194.667,170.667l334.222,49.778V160.111Z" transform="translate(29.333 4.364)" fill="#f4ac0d"/>
+    <path id="Path_37118" data-name="Path 37118" d="M398.209,842.005l-14.1,105.548s-4.81,29.825-26.939,24.052L254.222,957.174V820.556Z" transform="translate(0 6.419)" fill="#f4ac0d"/>
+    <path id="Path_37116" data-name="Path 37116" d="M1052.444,160.111s43.556,43.7,57.778,136.568c0,0,49.778,344.153-101.333,520.782,0,0-80,121.091-235.556,98.329L254.222,836.581V160.111Z" transform="translate(0)" fill="url(#radial-gradient)"/>
+    <rect id="Rectangle_4300" data-name="Rectangle 4300" width="35.397" height="35.397" rx="9.147" transform="matrix(0.994, 0.105, -0.105, 0.994, 455.687, 893.574)" fill="#c9262b"/>
+    <rect id="Rectangle_4302" data-name="Rectangle 4302" width="82.835" height="82.835" rx="21.811" transform="translate(331.524 913.695) rotate(8.181)" fill="#332e2a"/>
+  </g>
+</svg>
