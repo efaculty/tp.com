@@ -758,7 +758,7 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img src="img/reports.jpg" class="card-img-top" alt="...">
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/reports.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Reports</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -769,7 +769,7 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img src="img/communication.jpg" class="card-img-top" alt="...">
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/communication.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Communication</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -782,7 +782,7 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img src="img/support.jpg" class="card-img-top" alt="...">
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/support.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Support</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -794,7 +794,7 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img src="img/migration.jpg" class="card-img-top" alt="...">
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/support.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Migration</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -806,7 +806,7 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img src="img/user-friendly.jpg" class="card-img-top" alt="...">
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/user-friendly.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">User Friendly</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -818,7 +818,7 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img src="img/security.jpg" class="card-img-top" alt="...">
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/security.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Security</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -831,7 +831,7 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img src="img/accessibility.jpg" class="card-img-top" alt="...">
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/accessibility.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Accessibility</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -850,7 +850,7 @@
         <div class="container py-2 px-lg-5">
             <div class="row">
                 <div class="col-xl-6 order-1 text-center text-xl-start">
-                    <img src="img/svg/app.svg" width="450px" />
+                    <img src="img/svg/app.svg" class="img-fluid" width="75%"/>
                 </div>
                 <div class="col-xl-6 pt-4 order-1 text-center text-xl-start">
                     <!-- Title -->
@@ -1317,7 +1317,7 @@
         <div class="container position-relative">
             <div class="row">
                 <div class="col-12">
-                    <div class="p-3">
+                    <div class="p-5">
                         <div class="row position-relative">
                             <!-- Action box -->
                             <div class="col-11 mx-auto position-relative">
@@ -1556,7 +1556,7 @@
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -1672,6 +1672,9 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+        var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});
     </script>
 
 </body>
