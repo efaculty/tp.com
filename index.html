@@ -9,218 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        :root {
-            --bs-danger-rgb: 207, 17, 21;
-            --bs-btn-bg: #cf1115 !important;
-        }
-
-        .bg-tp {
-            background-color: #fff2f3
-                /* -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-image: url("img/bg/bg-3.jpg")*/
-        }
-
-        .home-bg {
-            overflow: hidden;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            position: relative;
-            display: flex;
-            margin: auto;
-            /*
-  *
-  * HERE IS THE SECRET
-  * MAKE SURE TO ALWAYS USE A LINEAR-GRADIENT VALUE
-  * THE FIRST ONE WILL BE FOR A BLACK OPACITY
-  * THE SECOND ONE (COMMENTED) WILL BE FOR A WHITE OPACITY
-  *
-  */
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(bg.webp);
-
-            /*** WHITE OPACITY ***/
-            /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%,rgba(255, 255, 255, 0.7) 100%), url(https://images.pexels.com/photos/34676/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);*/
-        }
-
-        .navbar-nav .nav-item a {
-            display: block;
-            color: #13294b;
-            font-size: 18px;
-            line-height: 25px;
-            font-weight: 600;
-        }
-
-        .navbar-nav>li {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .swiper-button-prev:focus-visible .swiper-button-next:focus-visible {
-            color: black;
-        }
-
-        .back-top {
-            display: block;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 99;
-            -webkit-transform: translateZ(0);
-        }
-
-        .whatsapp-top {
-            display: block;
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            z-index: 99;
-            -webkit-transform: translateZ(0);
-        }
-
-        .mobile-top {
-            display: block;
-            position: fixed;
-            bottom: 140px;
-            right: 20px;
-            z-index: 99;
-            -webkit-transform: translateZ(0);
-        }
-
-        a:focus-visible {
-            outline: 2px solid #cf1115;
-            border-radius: 3px;
-        }
-
-        .dropdown-item.active,
-        .dropdown-item:active {
-            color: #fff !important;
-            background-color: #cf1115;
-        }
-
-        .dropdown-item:focus,
-        .dropdown-item:hover {
-            color: #fff !important;
-            ;
-            background-color: #cf1115;
-        }
-
-        #carouselExampleAutoplaying .carousel-item {
-            object-fit: contain;
-            overflow: hidden;
-            height: 40vh;
-        }
-
-        .bg-testimonials {
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-image: url("img/svg/slider1.svg")
-        }
-
-        .bg-1 {
-
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-image: url("img/bg/bg-1.jpg")
-        }
-
-        .bg-2 {
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-position: center;
-            background-image: url("img/svg/software.svg")
-        }
-
-        .bg-3 {
-
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: auto 600px;
-            background-image: url("img/svg/sofa.svg")
-        }
-
-        .bg-4 {
-
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-image: url("img/svg/testimonials1.svg")
-        }
-
-        .bg-5 {
-
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-image: url("img/svg/contact2.svg");
-        }
-
-
-        .bg-svg-1 {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsRadialGradient1006)'%3e%3c/rect%3e%3cpath d='M1264.05 333.91 a5.99 5.99 0 1 0 11.98 0 a5.99 5.99 0 1 0 -11.98 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M610.05 319.35L659.7 319.35L659.7 369L610.05 369z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M159.63 559.21a22.72 22.72 0 1 0-45.35-2.93z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M800.98 552.58L831.43 552.58L831.43 559.29L800.98 559.29z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1281.66 49.95L1324.15 49.95L1324.15 105.34L1281.66 105.34z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M338.78 269.36 a28.38 28.38 0 1 0 56.76 0 a28.38 28.38 0 1 0 -56.76 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M819.77 528.75a9.89 9.89 0 1 0-19.74 1.15z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1114.11 8.29L1135.71 8.29L1135.71 49.65L1114.11 49.65z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M848.32 466.46L855 466.46L855 522.38L848.32 522.38z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M880.79 272.08a41.14 41.14 0 1 0-57.87-58.49z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M963.39 220.28a2.88 2.88 0 1 0 5.38 2.04z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M779.35 162.39L785.66 162.39L785.66 182.3L779.35 182.3z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M896.47 305.12a48.81 48.81 0 1 0-85.7-46.75z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M217.05 498.82L243.7 498.82L243.7 502.17L217.05 502.17z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M104.06 155.48a42.35 42.35 0 1 0-78.94 30.69z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M299.91 94.48a34.65 34.65 0 1 0-37.57 58.23z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M554.04 340.55L587.48 340.55L587.48 373.99L554.04 373.99z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1288.91 258.64L1290.61 258.64L1290.61 281.64L1288.91 281.64z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M16.78 321.45L21.42 321.45L21.42 351.22L16.78 351.22z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1231.76 87.71a33.8 33.8 0 1 0 44.49-50.9z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M194.5 326.54 a50.35 50.35 0 1 0 100.7 0 a50.35 50.35 0 1 0 -100.7 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M992.5 538.74L1035.54 538.74L1035.54 540.93L992.5 540.93z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M364.09 537.06 a1.91 1.91 0 1 0 3.82 0 a1.91 1.91 0 1 0 -3.82 0z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M94.82 185.16 a39.17 39.17 0 1 0 78.34 0 a39.17 39.17 0 1 0 -78.34 0z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1052.37 152.41 a29.75 29.75 0 1 0 59.5 0 a29.75 29.75 0 1 0 -59.5 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M507.44 194.93 a14.36 14.36 0 1 0 28.72 0 a14.36 14.36 0 1 0 -28.72 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1179.22 74.19 a18.3 18.3 0 1 0 36.6 0 a18.3 18.3 0 1 0 -36.6 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M499.7 442.01L513.72 442.01L513.72 457.18L499.7 457.18z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M1090.29 489.02L1116.65 489.02L1116.65 535.64L1090.29 535.64z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1345.42 460.21a49.27 49.27 0 1 0 97.38 15.08z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M711.76 63.42 a43.47 43.47 0 1 0 86.94 0 a43.47 43.47 0 1 0 -86.94 0z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M437.74 515L456.89 515L456.89 534.15L437.74 534.15z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M-4.66 114.34 a37.01 37.01 0 1 0 74.02 0 a37.01 37.01 0 1 0 -74.02 0z' fill='%23e73635'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='50%25' cy='50%25' r='772.53' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1006'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e");
-        }
-
-        .bg-svg-2 {
-            background-color: #BFBFBF;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10%25' height='10%25' viewBox='0 0 800 200'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23DD023E'/%3E%3Cstop offset='1' stop-color='%23BFBFBF'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23000000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
-            background-size: cover;
-        }
-
-        .bg-devider1 {
-            background:
-                linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 0, 0) 70.71%),
-                linear-gradient(127deg, rgba(255, 0, 102, 0.8), rgba(0, 0, 0, 0) 70.71%),
-                linear-gradient(336deg, rgba(255, 0, 51, 0.8), rgba(0, 0, 0, 0) 70.71%);
-        }
-
-        .bg-devider {
-            background-color: #13294b;
-            color: #fff;
-        }
-
-        .swiper-slide {
-            height: auto;
-        }
-
-        .contact-wrp {
-            background: linear-gradient(180deg, #fff 0, #e8f2ff 100%) no-repeat padding-box;
-            border-bottom: 2px solid #12233b;
-        }
-
-        #eduware .card:hover {
-            box-shadow: 0px 6px 10px rgba(206, 34, 34, 0.7);
-            transform: scale(1.02);
-            
-            color: #fff;
-            background:
-        linear-gradient(217deg, rgba(207,17,21,0.9), rgba(0,0,0,0) 90.71%),
-        linear-gradient(127deg, rgba(207,17,97,0.9), rgba(0,0,0,0) 90.71%),
-        linear-gradient(336deg, rgba(207,17,59,0.9), rgba(0,0,0,0) 90.71%);
-
-        }
-
-        #eduware .card:hover h5 {
-            background:transparent;
-            color: #fff;
-        }
-
-        #eduware .card:hover .border-danger {
-            border-color: #fff !important;
-        }
-        #eduware .card:hover .stretched-link{
-            color: #fff !important;
-        }
-        #eduware .card:hover svg{
-            fill: #fff !important;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -290,7 +80,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn btn-danger text-white shadow-sm" href="#">Contact Us</a>
+                            <a class="nav-link btn btn-danger text-white shadow-sm" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -495,7 +285,8 @@
                                 </div>
                                 <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                                     veritatis magnam atque dolor ex.</p>
-                                <a href="features/app-notification.html" class="text-danger stretched-link">Read more ...</a>
+                                <a href="features/app-notification.html" class="text-danger stretched-link">Read more
+                                    ...</a>
                             </div>
 
                         </div>
@@ -525,7 +316,8 @@
                                 <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                                     veritatis magnam
                                     atque dolor ex.</p>
-                                <a href="features/student-record.html" class="text-danger stretched-link">Read more ...</a>
+                                <a href="features/student-record.html" class="text-danger stretched-link">Read more
+                                    ...</a>
                             </div>
 
                         </div>
@@ -552,7 +344,8 @@
                                 </div>
                                 <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                                     veritatis magnam atque dolor ex.</p>
-                                <a href="features/staff-record.html" class="text-danger stretched-link">Read more ...</a>
+                                <a href="features/staff-record.html" class="text-danger stretched-link">Read more
+                                    ...</a>
                             </div>
 
                         </div>
@@ -579,7 +372,8 @@
                                 </div>
                                 <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                                     veritatis magnam atque dolor ex.</p>
-                                <a href="features/transportation.html" class="text-danger stretched-link">Read more ...</a>
+                                <a href="features/transportation.html" class="text-danger stretched-link">Read more
+                                    ...</a>
                             </div>
 
                         </div>
@@ -622,9 +416,12 @@
                                     <span
                                         class="display-6 lh-1 mb-0 border-danger text-danger border border-3 rounded-circle p-3"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#cf1115"
-                                            class="bi bi-award" viewBox="0 0 16 16">  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                          </svg></span>
+                                            class="bi bi-award" viewBox="0 0 16 16">
+                                            <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                        </svg></span>
                                     <div class="ms-4 h6 fw-normal mb-0 text-dark">
                                         <div class="d-flex">
                                             <h5 class="mb-0">Examination Module</h5>
@@ -647,7 +444,9 @@
                                     <span
                                         class="display-6 lh-1 mb-0 border-danger text-danger border border-3 rounded-circle p-3"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#cf1115"
-                                            class="bi bi-award" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                            class="bi bi-award" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                                         </svg></span>
                                     <div class="ms-4 h6 fw-normal mb-0 text-dark">
                                         <div class="d-flex">
@@ -670,7 +469,9 @@
                                     <span
                                         class="display-6 lh-1 mb-0 border-danger text-danger border border-3 rounded-circle p-3"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#cf1115"
-                                            class="bi bi-award" viewBox="0 0 16 16">  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                            class="bi bi-award" viewBox="0 0 16 16">
+                                            <path
+                                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
                                         </svg></span>
                                     <div class="ms-4 h6 fw-normal mb-0 text-dark">
                                         <div class="d-flex">
@@ -693,7 +494,9 @@
                                     <span
                                         class="display-6 lh-1 mb-0 border-danger text-danger border border-3 rounded-circle p-3"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#cf1115"
-                                            class="bi bi-award" viewBox="0 0 16 16"><path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                                            class="bi bi-award" viewBox="0 0 16 16">
+                                            <path
+                                                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
                                         </svg></span>
                                     <div class="ms-4 h6 fw-normal mb-0 text-dark">
                                         <div class="d-flex">
@@ -758,7 +561,8 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/reports.jpg" />
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg"
+                                    data-src="img/reports.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Reports</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -769,7 +573,8 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/communication.jpg" />
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg"
+                                    data-src="img/communication.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Communication</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -782,7 +587,8 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/support.jpg" />
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg"
+                                    data-src="img/support.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Support</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -794,7 +600,8 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3 d-flex align-items-stretch">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/support.jpg" />
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg"
+                                    data-src="img/migration.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Migration</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -806,7 +613,8 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/user-friendly.jpg" />
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg"
+                                    data-src="img/user-friendly.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">User Friendly</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -818,7 +626,8 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/security.jpg" />
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg"
+                                    data-src="img/security.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Security</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -831,7 +640,8 @@
                         <!-- Counter item -->
                         <div class="col-sm-6 col-xl-3">
                             <div class="card border-dark shadow bg-opacity-15 rounded">
-                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg" data-src="img/accessibility.jpg" />
+                                <img alt="A lazy image" class="lazy card-img-top" src="img/placeholder-img.svg"
+                                    data-src="img/accessibility.jpg" />
                                 <div class="card-body">
                                     <h5 class="card-title">Accessibility</h5>
                                     <p class="card-text">Some quick example text to build on the card title
@@ -850,7 +660,8 @@
         <div class="container py-2 px-lg-5">
             <div class="row">
                 <div class="col-xl-6 order-1 text-center text-xl-start">
-                    <object class="lazy img-fluid" type="image/svg+xml" src="img/placeholder-img.svg" data-src="img/svg/app.svg" width="75%"></object>
+                    <object class="lazy img-fluid" type="image/svg+xml" src="img/placeholder-img.svg"
+                        data-src="img/svg/app.svg" width="75%"></object>
                     <!--img src="img/svg/app.svg" class="img-fluid" width="75%"/-->
                 </div>
                 <div class="col-xl-6 pt-4 order-1 text-center text-xl-start">
@@ -992,7 +803,8 @@
                     <h4 class="fw-bold text-danger text-center">TESTIMONIALS</h4>
                     <h3 class="display-7 fw-bold pb-2 text-center">What do our clients think about us.
                     </h3>
-                    <object class="lazy img-fluid" type="image/svg+xml" src="img/placeholder-img.svg" data-src="img/svg/testimonials.svg"></object>
+                    <object class="lazy img-fluid" type="image/svg+xml" src="img/placeholder-img.svg"
+                        data-src="img/svg/testimonials.svg"></object>
                     <!--img src="img/svg/testimonials.svg" class="img-fluid" /-->
                 </div>
                 <div class="col-12 col-md-9">
@@ -1331,13 +1143,14 @@
                                     <div class="col-lg-7">
                                         <h3 class="h2 text-white">Other Services</h3>
                                         <h4 class="text-white">Software | Website | Application</h4>
-                                        <p class="text-white mb-3 mb-lg-0">make your a high quality software and website.</p>
+                                        <p class="text-white mb-3 mb-lg-0">make your a high quality software and
+                                            website.</p>
                                     </div>
                                     <!-- Content and input -->
                                     <div class="col-lg-5 text-lg-end">
                                         <a href="#" class="btn btn-lg btn-light mb-0">Start Using Today</a>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div> <!-- Row END -->
@@ -1350,7 +1163,8 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-6">
-                    <object class="lazy img-fluid" type="image/svg+xml" src="img/placeholder-img.svg" data-src="img/svg/contact.svg"></object>
+                    <object class="lazy img-fluid" type="image/svg+xml" src="img/placeholder-img.svg"
+                        data-src="img/svg/contact.svg"></object>
                     <!--img src="img/svg/contact.svg" class="card-img-top"-->
 
                 </div>
@@ -1508,7 +1322,7 @@
                         <span class="d-block small">Monday to Friday: 9:30AM to 6:30PM</span>
                         <span class="d-block small">Saturday: 9:30AM to 3:00PM</span>
                     </p>
-                    <p class="mb-0">Email:<span class="h6 fw-light ms-2">curtomercate.turningpoint@gmail.com</span></p>
+                    <p class="mb-0">Email:<span class="h6 fw-light ms-2">customercare.turningpoint@gmail.com</span></p>
 
                     <div class="row g-2 mt-2">
                         <!-- Google play store button -->
@@ -1543,6 +1357,7 @@
             </div>
         </div>
     </footer>
+
     <div id="go-mobile" class="whatsapp-top">
         <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#4FCE5D" class="bi bi-whatsapp"
@@ -1686,8 +1501,20 @@
             document.documentElement.scrollTop = 0;
         }
         var lazyLoadInstance = new LazyLoad({
-  // Your custom settings go here
-});
+            // Your custom settings go here
+        });
+        function dropdownMenu1565Set(val){
+                console.log(val);
+                /*alert(document.getElementById('#dropdownMenu1565').options[this.selectedIndex].value);
+                if(val.innerHTML!=""){
+                    alert(document.getElementById('#dropdownMenu1565').options[this.selectedIndex].value);
+                    //$('#dropdownMenu1565').html(val.innerHTML);
+                }
+                else{
+                // $('#dropdownMenu165').val('');
+                // $('#dropdownMenu165').html('Select Client');}
+            }*/
+        }
     </script>
 
 </body>
