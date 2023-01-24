@@ -45,7 +45,7 @@
 
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow-sm">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand col-lg-3" href="#">
                     <img src="logo-2.png" height="50px" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -54,7 +54,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
+                    <ul class="navbar-nav mb-2 me-auto mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#" title="Home">Home</a>
                         </li>
@@ -81,6 +81,25 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-danger text-white shadow-sm" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item me-0">
+                            <a class="nav-link" href="contact.html" hidden>
+                                <img src="img/login.png"/ height="80px">
+                            </a>
+                            <a class="nav-link px-0" href="contact.html">
+                                <img src="img/student.png"/ height="40px">
+                            </a>
+                        </li>
+                        <li class="nav-item me-0 ps-0">
+                            <a class="nav-link" href="contact.html" hidden>
+                                <img src="img/login.png"/ height="80px">
+                            </a>
+                            <a class="nav-link px-0" href="contact.html">
+                                <img src="img/admin.png"/ height="40px">
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1406,6 +1425,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
+        window.addEventListener('scroll', function() {
+        let header = document.querySelector('nav');
+        header.classList.toggle('navbar-fixed', window.scrollY > 200);
+        });
         var swiper = new Swiper(".mySwiper", {
             lazy: true,
             slidesPerView: 2,

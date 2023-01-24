@@ -251,3 +251,11 @@ a:focus-visible {
     50% { background-color: #FF0000; box-shadow: 0 0 5px #FF0000; }
     100% { background-color: #B20000; box-shadow: 0 0 1px #B20000; }
   }
+
+  .navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+  }
